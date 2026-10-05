@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en" data-accent="klein">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>ATELIER VANGUARD — Creative Engineering & Spatial Design Collective</title>
+  <meta name="title" content="ATELIER VANGUARD — Creative Engineering & Spatial Design Collective">
+  <meta name="description" content="Atelier Vanguard is an international design studio engineering sensory digital experiences, physical-digital interfaces, and flagship software for pioneering brands.">
+  <meta name="theme-color" content="#0a0b0d">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ateliervanguard.design/">
+  <meta property="og:title" content="ATELIER VANGUARD — Creative Engineering & Spatial Design Collective">
+  <meta property="og:description" content="Engineering the sensory frontier of digital and physical design. Global awards, bespoke systems, zero compromises.">
+  <meta property="og:image" content="assets/images/hero-sculpture.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="ATELIER VANGUARD — Creative Engineering & Spatial Design Collective">
+  <meta property="twitter:description" content="Engineering the sensory frontier of digital and physical design.">
+  <meta property="twitter:image" content="assets/images/hero-sculpture.jpg">
+
+  <!-- Google Fonts: Syne + Space Grotesk + Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="custom-cursor-active">
+
+  <!-- Custom Ambient Cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- Background Ambient Mesh -->
+  <div class="ambient-glow-wrapper" aria-hidden="true">
+    <div class="ambient-orb ambient-orb-1"></div>
+    <div class="ambient-orb ambient-orb-2"></div>
+    <div class="ambient-grid-overlay"></div>
+  </div>
+
+  <!-- Announcement Bar -->
+  <aside class="top-announcement" id="topAnnouncement">
+    <div class="announcement-content">
+      <span class="status-indicator-dot"></span>
+      <span class="announcement-text">NOW COMMISSIONING Q3 / Q4 2026 PROJECTS · PARIS / TOKYO / NEW YORK</span>
+      <span class="announcement-separator">•</span>
+      <span class="announcement-sub">AWARDS: AWWWARDS STUDIO OF THE YEAR NOMINEE</span>
+    </div>
+  </aside>
+
+  <!-- Sticky Global Navigation -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" id="brandLogo" aria-label="Atelier Vanguard Home">
+        <span class="brand-symbol">✦</span>
+        <span class="brand-name">ATELIER<span class="brand-accent">VANGUARD</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#works" class="nav-link"><span>01</span> Works</a></li>
+          <li class="nav-item"><a href="#capabilities" class="nav-link"><span>02</span> Capabilities</a></li>
+          <li class="nav-item"><a href="#manifesto" class="nav-link"><span>03</span> Manifesto</a></li>
+          <li class="nav-item"><a href="#estimator" class="nav-link"><span>04</span> Scope Lab</a></li>
+          <li class="nav-item"><a href="#honors" class="nav-link"><span>05</span> Honors</a></li>
+        </ul>
+      </nav>
+
+      <!-- Utility Actions -->
+      <div class="header-actions">
+        
+        <!-- Palette Accent Switcher -->
+        <button class="accent-toggle-btn" id="accentToggleBtn" title="Switch Accent Palette (Klein Blue / Acid Volt)" aria-label="Toggle accent color theme">
+          <span class="color-swatch klein-swatch"></span>
+          <span class="color-swatch volt-swatch"></span>
+          <span class="toggle-label" id="paletteLabel">KLEIN</span>
+        </button>
+
+        <!-- Subtle Audio Feedback Toggle -->
+        <button class="audio-toggle-btn" id="audioToggleBtn" title="Toggle Interactive Audio Experience" aria-label="Toggle atmospheric sound">
+          <span class="sound-wave-icon">
+            <span class="bar bar-1"></span>
+            <span class="bar bar-2"></span>
+            <span class="bar bar-3"></span>
+          </span>
+          <span class="audio-label" id="audioStatusLabel">SOUND OFF</span>
+        </button>
+
+        <!-- Contact CTA -->
+        <a href="#estimator" class="btn btn-primary nav-cta-btn" id="navBriefBtn">
+          <span>Initiate Brief</span>
+          <svg class="btn-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Mobile Menu" aria-expanded="false">
+          <span class="menu-line line-top"></span>
+          <span class="menu-line line-bottom"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-inner">
+      <nav class="mobile-nav" aria-label="Mobile Navigation">
+        <ul class="mobile-nav-list">
+          <li><a href="#works" class="mobile-nav-link"><span>01</span> Selected Works</a></li>
+          <li><a href="#capabilities" class="mobile-nav-link"><span>02</span> Studio Capabilities</a></li>
+          <li><a href="#manifesto" class="mobile-nav-link"><span>03</span> Design Manifesto</a></li>
+          <li><a href="#estimator" class="mobile-nav-link"><span>04</span> Scope & Estimator</a></li>
+          <li><a href="#honors" class="mobile-nav-link"><span>05</span> Global Honors</a></li>
+          <li><a href="#contact" class="mobile-nav-link"><span>06</span> Connect</a></li>
+        </ul>
+      </nav>
+      <div class="drawer-footer">
+        <p class="drawer-caption">ATELIER VANGUARD DESIGN SYSTEMS © 2026</p>
+        <p class="drawer-contact-info">hello@ateliervanguard.design</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        
+        <div class="hero-header-row">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>CREATIVE ENGINEERING & SPATIAL INTERACTION LAB</span>
+          </div>
+          <div class="hero-coordinates">
+            <span>35°40'N 139°46'E · 40°42'N 74°00'W</span>
+          </div>
+        </div>
+
+        <div class="hero-main-grid">
+          
+          <!-- Hero Typography -->
+          <div class="hero-copy-column">
+            <h1 class="hero-title">
+              Where Pure <span class="title-highlight">Aesthetic Logic</span> Meets Velocity.
+            </h1>
+
+            <p class="hero-description">
+              We engineer boundary-breaking digital experiences, bespoke spatial interfaces, and cohesive brand systems for visionary brands shaping culture and technology.
+            </p>
+
+            <div class="hero-cta-group">
+              <a href="#works" class="btn btn-primary hero-btn" id="heroExploreBtn">
+                <span>Explore Curated Works</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M2.5 11.5L11.5 2.5M11.5 2.5H4.5M11.5 2.5V9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+
+              <a href="#estimator" class="btn btn-secondary hero-btn-secondary" id="heroScopeBtn">
+                <span>Calculate Scope & Budget</span>
+              </a>
+            </div>
+
+            <!-- Key Proof Metrics -->
+            <div class="hero-metrics-bar">
+              <div class="metric-item">
+                <span class="metric-number" data-count="38">38</span>
+                <span class="metric-label">Cannes & FWA Laurels</span>
+              </div>
+              <div class="metric-separator">/</div>
+              <div class="metric-item">
+                <span class="metric-number" data-count="14">14</span>
+                <span class="metric-label">Site of the Year Wins</span>
+              </div>
+              <div class="metric-separator">/</div>
+              <div class="metric-item">
+                <span class="metric-number" data-prefix="$" data-count="4.8" data-suffix="B">$4.8B</span>
+                <span class="metric-label">Client Market Lift</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Dynamic Parallax Media Showcase -->
+          <div class="hero-showcase-column">
+            <div class="showcase-card" id="heroParallaxCard">
+              <div class="card-visual-frame">
+                <img src="assets/images/hero-sculpture.jpg" alt="Atelier Vanguard Kinetic 3D Fluid Chrome Sculpture" class="hero-showcase-img" id="heroShowcaseImg">
+                <div class="card-scanline-effect"></div>
+                <div class="card-glass-glow"></div>
+              </div>
+              
+              <!-- Floating Interactive HUD Info Pill -->
+              <div class="showcase-hud-pill">
+                <div class="hud-left">
+                  <span class="hud-status-pulsar"></span>
+                  <div class="hud-text-group">
+                    <span class="hud-caption">KINETIC MONOGRAPH #09</span>
+                    <span class="hud-sub">FLUID DYNAMICS ENGINE</span>
+                  </div>
+                </div>
+                <span class="hud-tag">WEBGL // 120 FPS</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Infinite Client Ticker -->
+      <div class="clients-ticker-wrap" aria-label="Trusted client partners">
+        <div class="ticker-label">SELECT COLLABORATORS & PATRONS:</div>
+        <div class="ticker-track">
+          <div class="ticker-content">
+            <span class="ticker-item">TEENAGE ENGINEERING</span>
+            <span class="ticker-item">POLESTAR AUTOMOTIVE</span>
+            <span class="ticker-item">NOTHING TECH</span>
+            <span class="ticker-item">BANG & OLUFSEN</span>
+            <span class="ticker-item">ACNE STUDIOS</span>
+            <span class="ticker-item">GENTLE MONSTER</span>
+            <span class="ticker-item">OPENAI LABS</span>
+            <span class="ticker-item">RIMOWA</span>
+            <span class="ticker-item">VITRA DESIGN</span>
+            <span class="ticker-item">ARC BROWSER</span>
+          </div>
+          <!-- Cloned for infinite loop -->
+          <div class="ticker-content" aria-hidden="true">
+            <span class="ticker-item">TEENAGE ENGINEERING</span>
+            <span class="ticker-item">POLESTAR AUTOMOTIVE</span>
+            <span class="ticker-item">NOTHING TECH</span>
+            <span class="ticker-item">BANG & OLUFSEN</span>
+            <span class="ticker-item">ACNE STUDIOS</span>
+            <span class="ticker-item">GENTLE MONSTER</span>
+            <span class="ticker-item">OPENAI LABS</span>
+            <span class="ticker-item">RIMOWA</span>
+            <span class="ticker-item">VITRA DESIGN</span>
+            <span class="ticker-item">ARC BROWSER</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION 01: SELECTED WORKS (Filterable Gallery + Interactive Modal) -->
+    <section class="section-works" id="works">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <div class="section-meta-tag">
+            <span class="tag-number">01</span>
+            <span class="tag-label">PORTFOLIO EXCELLENCE</span>
+          </div>
+          <div class="section-heading-split">
+            <h2 class="section-title">Selected Commissions</h2>
+            <p class="section-subtitle">
+              Every commission is an uncompromised dialogue between physical craftsmanship and precision digital systems.
+            </p>
+          </div>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="portfolio-filter-bar" role="tablist" aria-label="Work category filters">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Works <span class="filter-count">(4)</span></button>
+          <button class="filter-btn" data-filter="spatial" role="tab" aria-selected="false">Spatial & Hardware <span class="filter-count">(2)</span></button>
+          <button class="filter-btn" data-filter="automotive" role="tab" aria-selected="false">Automotive Systems <span class="filter-count">(1)</span></button>
+          <button class="filter-btn" data-filter="architectural" role="tab" aria-selected="false">Architectural Installations <span class="filter-count">(1)</span></button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="works-grid" id="worksGrid">
+          
+          <!-- Project 01: Auralis Alpha -->
+          <article class="project-card" data-category="spatial" data-project-id="auralis">
+            <div class="project-media-wrap">
+              <img src="assets/images/case-spatial-audio.jpg" alt="Auralis Alpha Minimalist Frosted Glass Audio Device" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <span class="view-case-pill">
+                  <span>Explore Case Study</span>
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </span>
+              </div>
+              <span class="project-index-badge">01 // 04</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-client">AURALIS LABS × TEENAGE ENG.</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Auralis Alpha: Tactile Acoustic Hardware</h3>
+              <p class="project-brief">Frosted architectural glass amplifier paired with a 0-latency physical-digital haptic control interface.</p>
+              <div class="project-tags">
+                <span class="tag">Industrial Design</span>
+                <span class="tag">Embedded Haptics</span>
+                <span class="tag">Acoustic Engineering</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 02: Polestar Synapse -->
+          <article class="project-card" data-category="automotive" data-project-id="polestar">
+            <div class="project-media-wrap">
+              <img src="assets/images/case-mobility-cockpit.jpg" alt="Polestar Synapse Autonomous Cockpit Interface" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <span class="view-case-pill">
+                  <span>Explore Case Study</span>
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </span>
+              </div>
+              <span class="project-index-badge">02 // 04</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-client">POLESTAR PERFORMANCE EV</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">Synapse OS: Autonomous Cockpit & HUD</h3>
+              <p class="project-brief">Ultra-wide Scandinavian OLED instrument panel with contextual AI glanceable intelligence.</p>
+              <div class="project-tags">
+                <span class="tag">In-Vehicle UX</span>
+                <span class="tag">Spatial HUD</span>
+                <span class="tag">Safety Systems</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 03: Monolith Venice -->
+          <article class="project-card" data-category="architectural" data-project-id="monolith">
+            <div class="project-media-wrap">
+              <img src="assets/images/case-editorial-installation.jpg" alt="Monolith Gallery Light Installation in Brutalist Space" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <span class="view-case-pill">
+                  <span>Explore Case Study</span>
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </span>
+              </div>
+              <span class="project-index-badge">03 // 04</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-client">VENICE BIENNALE ARCHITETTURA</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Monolith Pillars: Light & Mass Dialogue</h3>
+              <p class="project-brief">Kinetic light installation transforming raw brutalist concrete pillars through real-time visitor biometric resonance.</p>
+              <div class="project-tags">
+                <span class="tag">Spatial Installation</span>
+                <span class="tag">Generative Light</span>
+                <span class="tag">Biometrics</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 04: Chromaflow OS -->
+          <article class="project-card" data-category="spatial" data-project-id="chromaflow">
+            <div class="project-media-wrap">
+              <img src="assets/images/hero-sculpture.jpg" alt="Chromaflow Generative Spatial Interface System" class="project-img" loading="lazy">
+              <div class="project-overlay">
+                <span class="view-case-pill">
+                  <span>Explore Case Study</span>
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </span>
+              </div>
+              <span class="project-index-badge">04 // 04</span>
+            </div>
+            <div class="project-info">
+              <div class="project-meta-row">
+                <span class="project-client">NOTHING × KINETIC LABS</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Chromaflow: Spatial Design System</h3>
+              <p class="project-brief">Liquid chrome micro-interactions, volumetric typography, and tactile shader physics for next-gen headsets.</p>
+              <div class="project-tags">
+                <span class="tag">Spatial Computing</span>
+                <span class="tag">WebGL Shaders</span>
+                <span class="tag">Design Tokens</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 02: CAPABILITIES BENTO GRID -->
+    <section class="section-capabilities" id="capabilities">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <div class="section-meta-tag">
+            <span class="tag-number">02</span>
+            <span class="tag-label">MODULAR EXPERTISE</span>
+          </div>
+          <div class="section-heading-split">
+            <h2 class="section-title">Studio Disciplines</h2>
+            <p class="section-subtitle">
+              We eliminate the friction between conceptual art direction and deep engineering execution.
+            </p>
+          </div>
+        </div>
+
+        <div class="bento-grid">
+          
+          <!-- Bento Card 1: Spatial & Product Architecture (Large) -->
+          <div class="bento-card bento-span-2">
+            <div class="bento-badge">DISCIPLINE 01</div>
+            <h3 class="bento-title">Spatial & Tangible Digital Interfaces</h3>
+            <p class="bento-copy">
+              From next-generation spatial computing headsets to automotive infotainment systems and physical hardware consoles, we design interfaces that feel native to human perception.
+            </p>
+            <ul class="bento-features">
+              <li>✦ Real-time 3D WebGL / WebGPU scene engines</li>
+              <li>✦ Micro-haptic tactile feedback choreography</li>
+              <li>✦ In-vehicle contextual UI & automotive glass displays</li>
+              <li>✦ Spatial visionOS & WebXR interaction primitives</li>
+            </ul>
+            <div class="bento-watermark">SPATIAL // 3D</div>
+          </div>
+
+          <!-- Bento Card 2: High-Velocity Frontend Architecture -->
+          <div class="bento-card">
+            <div class="bento-badge">DISCIPLINE 02</div>
+            <h3 class="bento-title">Zero-Latency Engineering</h3>
+            <p class="bento-copy">
+              Engineered with sub-millisecond responsiveness, buttery 120 FPS transitions, and uncompromising WCAG AAA accessibility standards.
+            </p>
+            <div class="bento-stats-box">
+              <div class="stat-pill"><span class="highlight">100</span> Lighthouse Score</div>
+              <div class="stat-pill"><span class="highlight">&lt; 0.3s</span> First Contentful Paint</div>
+            </div>
+            <div class="bento-watermark">CODE // 0ms</div>
+          </div>
+
+          <!-- Bento Card 3: Algorithmic Brand Systems -->
+          <div class="bento-card">
+            <div class="bento-badge">DISCIPLINE 03</div>
+            <h3 class="bento-title">Algorithmic Identity Systems</h3>
+            <p class="bento-copy">
+              Dynamic typographic monographs, responsive logos, variable typeface creation, and generative motion guidelines that scale effortlessly across physical and digital touchpoints.
+            </p>
+            <div class="bento-watermark">BRAND // EDITORIAL</div>
+          </div>
+
+          <!-- Bento Card 4: Creative Direction & Cinema (Large) -->
+          <div class="bento-card bento-span-2">
+            <div class="bento-badge">DISCIPLINE 04</div>
+            <h3 class="bento-title">Cinematic 3D Direction & Motion Architecture</h3>
+            <p class="bento-copy">
+              We translate brand gravity into tactile cinematic motion. Physics-based particle simulations, raytraced product visualizations, and editorial interactive sound design.
+            </p>
+            <div class="bento-tags-row">
+              <span class="tag">Procedural 3D</span>
+              <span class="tag">Web Audio API Synth</span>
+              <span class="tag">Physics Simulation</span>
+              <span class="tag">Editorial Typography</span>
+            </div>
+            <div class="bento-watermark">CINEMA // MOTION</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 03: MANIFESTO & GLOBAL HUBS -->
+    <section class="section-manifesto" id="manifesto">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <div class="section-meta-tag">
+            <span class="tag-number">03</span>
+            <span class="tag-label">OUR CONVICTION</span>
+          </div>
+        </div>
+
+        <div class="manifesto-wrap">
+          <blockquote class="manifesto-statement">
+            “The world is saturated with <span class="highlight-word">disposable templates</span> and algorithmic sameness. We stand for <span class="highlight-word">tactile intent</span>, radical typographic clarity, and sensory digital craftsmanship that leaves an <span class="highlight-word">indelible mark</span>.”
+          </blockquote>
+          <div class="manifesto-author">
+            <span class="author-name">— KAIROS VANCE & SORA LIN</span>
+            <span class="author-role">Founding Partners & Executive Creative Directors</span>
+          </div>
+        </div>
+
+        <!-- Global Studios Live Time Clocks -->
+        <div class="studios-clock-grid">
+          
+          <div class="studio-card" data-tz="Asia/Tokyo">
+            <div class="studio-city">TOKYO</div>
+            <div class="studio-neighborhood">Aoyama District</div>
+            <div class="studio-time" id="clockTokyo">--:--:-- JST</div>
+            <div class="studio-status"><span class="live-dot"></span> STUDIO ACTIVE</div>
+          </div>
+
+          <div class="studio-card" data-tz="Europe/Berlin">
+            <div class="studio-city">BERLIN</div>
+            <div class="studio-neighborhood">Mitte Gallery Quarter</div>
+            <div class="studio-time" id="clockBerlin">--:--:-- CEST</div>
+            <div class="studio-status"><span class="live-dot"></span> STUDIO ACTIVE</div>
+          </div>
+
+          <div class="studio-card" data-tz="America/New_York">
+            <div class="studio-city">NEW YORK</div>
+            <div class="studio-neighborhood">SoHo Loft Complex</div>
+            <div class="studio-time" id="clockNewYork">--:--:-- EDT</div>
+            <div class="studio-status"><span class="live-dot"></span> STUDIO ACTIVE</div>
+          </div>
+
+          <div class="studio-card" data-tz="Europe/London">
+            <div class="studio-city">LONDON</div>
+            <div class="studio-neighborhood">Shoreditch Works</div>
+            <div class="studio-time" id="clockLondon">--:--:-- BST</div>
+            <div class="studio-status"><span class="live-dot"></span> STUDIO ACTIVE</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 04: INTERACTIVE PROJECT ESTIMATOR & SCOPE LAB -->
+    <section class="section-estimator" id="estimator">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <div class="section-meta-tag">
+            <span class="tag-number">04</span>
+            <span class="tag-label">INTERACTIVE SCOPE LAB</span>
+          </div>
+          <div class="section-heading-split">
+            <h2 class="section-title">Configure Your Engagement</h2>
+            <p class="section-subtitle">
+              Calculate projected investment, timeline velocity, and core team assembly in real-time.
+            </p>
+          </div>
+        </div>
+
+        <div class="estimator-layout">
+          
+          <!-- Controls Panel -->
+          <div class="estimator-controls-card">
+            
+            <!-- Step 1: Engagement Type -->
+            <div class="estimator-group">
+              <label class="estimator-label">
+                <span class="step-num">01</span> SELECT ENGAGEMENT TYPE
+              </label>
+              <div class="service-selector-grid">
+                <button type="button" class="service-pill-btn active" data-service="flagship" data-base-price="45000" data-weeks="8">
+                  <span class="pill-title">Flagship Web Experience</span>
+                  <span class="pill-desc">3D/WebGL · Editorial UI · 120 FPS</span>
+                </button>
+
+                <button type="button" class="service-pill-btn" data-service="spatial" data-base-price="65000" data-weeks="12">
+                  <span class="pill-title">Spatial & Hardware UI</span>
+                  <span class="pill-desc">Automotive/XR · Haptics · Prototype</span>
+                </button>
+
+                <button type="button" class="service-pill-btn" data-service="brand" data-base-price="35000" data-weeks="6">
+                  <span class="pill-title">Algorithmic Brand Identity</span>
+                  <span class="pill-desc">Design System · Monograph · Guidelines</span>
+                </button>
+
+                <button type="button" class="service-pill-btn" data-service="venture" data-base-price="95000" data-weeks="16">
+                  <span class="pill-title">Full Enterprise Ecosystem</span>
+                  <span class="pill-desc">Complete Multi-Platform Overhaul</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Velocity / Sprint Model -->
+            <div class="estimator-group">
+              <label class="estimator-label">
+                <span class="step-num">02</span> VELOCITY & SPRINTS
+              </label>
+              <div class="velocity-selector">
+                <label class="radio-card active">
+                  <input type="radio" name="velocity" value="standard" checked>
+                  <span class="radio-custom"></span>
+                  <div class="radio-info">
+                    <span class="radio-name">Standard Immersion</span>
+                    <span class="radio-sub">Deep exploration, standard sprint cycles</span>
+                  </div>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="velocity" value="accelerated">
+                  <span class="radio-custom"></span>
+                  <div class="radio-info">
+                    <span class="radio-name">Accelerated Sprint (+25%)</span>
+                    <span class="radio-sub">Dedicated dual-senior squad, rapid deployment</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Step 3: Add-on Capabilities -->
+            <div class="estimator-group">
+              <label class="estimator-label">
+                <span class="step-num">03</span> ENHANCED MODULES
+              </label>
+              <div class="addon-checkbox-list">
+                <label class="addon-item">
+                  <input type="checkbox" class="addon-check" data-addon-price="12000" id="addonAudio">
+                  <span class="addon-checkbox"></span>
+                  <span class="addon-label">Interactive Web Audio API Soundscapes</span>
+                  <span class="addon-fee">+$12k</span>
+                </label>
+                <label class="addon-item">
+                  <input type="checkbox" class="addon-check" data-addon-price="18000" id="addonShaders">
+                  <span class="addon-checkbox"></span>
+                  <span class="addon-label">Custom GLSL Shader & Physics Simulation</span>
+                  <span class="addon-fee">+$18k</span>
+                </label>
+                <label class="addon-item">
+                  <input type="checkbox" class="addon-check" data-addon-price="8500" id="addonCopy">
+                  <span class="addon-checkbox"></span>
+                  <span class="addon-label">Editorial Monograph & Creative Copywriting</span>
+                  <span class="addon-fee">+$8.5k</span>
+                </label>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Dynamic Output & Inquiry Submission Card -->
+          <div class="estimator-summary-card">
+            
+            <div class="summary-header">
+              <span class="summary-badge">PROJECTED BLUEPRINT</span>
+              <div class="price-display-wrap">
+                <span class="price-currency">$</span>
+                <span class="price-value" id="calcPriceDisplay">45,000</span>
+                <span class="price-usd">USD</span>
+              </div>
+              <p class="summary-timeline-row">
+                <span>ESTIMATED DURATION:</span>
+                <strong id="calcTimelineDisplay">8 WEEKS</strong>
+              </p>
+            </div>
+
+            <div class="summary-breakdown">
+              <div class="breakdown-row">
+                <span>Core Discipline:</span>
+                <strong id="summaryDiscipline">Flagship Web Experience</strong>
+              </div>
+              <div class="breakdown-row">
+                <span>Dedicated Squad:</span>
+                <strong id="summarySquad">1 Creative Dir, 2 Tech Architects, 1 3D Artist</strong>
+              </div>
+              <div class="breakdown-row">
+                <span>Earliest Slot:</span>
+                <strong class="highlight-slot">Mid-Month Commission Ready</strong>
+              </div>
+            </div>
+
+            <!-- Instant Inquiry Form -->
+            <form class="estimator-form" id="scopeInquiryForm">
+              <h4 class="form-title">Transmit Project Brief</h4>
+              
+              <div class="form-field">
+                <label for="clientName">Your Name & Title</label>
+                <input type="text" id="clientName" placeholder="e.g. Elena Rostova, VP Design" required>
+              </div>
+
+              <div class="form-field">
+                <label for="clientEmail">Work Email</label>
+                <input type="email" id="clientEmail" placeholder="elena@company.com" required>
+              </div>
+
+              <div class="form-field">
+                <label for="clientMessage">Project Vision / Details (Optional)</label>
+                <textarea id="clientMessage" rows="3" placeholder="Tell us about the challenge, audience, or target launch..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit-brief-btn" id="submitBriefBtn">
+                <span>Transmit Specification</span>
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+                  <path d="M2.5 11.5L11.5 2.5M11.5 2.5H4.5M11.5 2.5V9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </button>
+
+              <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite"></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 05: GLOBAL RECOGNITION (Interactive Accordion) -->
+    <section class="section-honors" id="honors">
+      <div class="section-container">
+        
+        <div class="section-header-block">
+          <div class="section-meta-tag">
+            <span class="tag-number">05</span>
+            <span class="tag-label">INDUSTRY ACCLAIM</span>
+          </div>
+          <div class="section-heading-split">
+            <h2 class="section-title">Honors & Accolades</h2>
+            <p class="section-subtitle">
+              Peer-evaluated benchmarks across international design, interaction, and technical innovation juries.
+            </p>
+          </div>
+        </div>
+
+        <div class="honors-accordion" id="honorsAccordion">
+          
+          <div class="accordion-item active">
+            <button class="accordion-trigger" aria-expanded="true">
+              <span class="award-year">2026</span>
+              <span class="award-name">Awwwards — Agency & Studio of the Year</span>
+              <span class="award-category">Global Interactive Excellence</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p class="award-quote">
+                “Atelier Vanguard sets an audacious standard for technical poise, marrying brutalist architectural sensitivity with instantaneous frontend performance that feels years ahead of the industry.”
+              </p>
+              <div class="award-jury">Jury Citation, Awwwards Annual Congress Tokyo</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="award-year">2025</span>
+              <span class="award-name">Cannes Lions — Grand Prix in Digital Craft</span>
+              <span class="award-category">Automotive Spatial Cockpit UI</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p class="award-quote">
+                “Recognized for transforming driver interface cognitive load into a calm, poetic, and zero-distraction spatial experience.”
+              </p>
+              <div class="award-jury">Digital Craft Grand Jury, Cannes International Festival of Creativity</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="award-year">2025</span>
+              <span class="award-name">D&AD — Yellow Pencil for Product & Sound Design</span>
+              <span class="award-category">Acoustic Device Architecture</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p class="award-quote">
+                “An exquisite convergence of tactile frosted glass engineering, custom haptic detents, and synthetic acoustic feedback.”
+              </p>
+              <div class="award-jury">D&AD Awards, London</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-trigger" aria-expanded="false">
+              <span class="award-year">2024</span>
+              <span class="award-name">FWA of the Day × 18 Laurels</span>
+              <span class="award-category">WebXR & Spatial Interfaces</span>
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-panel">
+              <p class="award-quote">
+                “Consistent technological bravura pushing browser graphics engines to true console-grade immersion.”
+              </p>
+              <div class="award-jury">Favourite Website Awards Jury</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 06: CLIENT TESTIMONIALS (Interactive Carousel) -->
+    <section class="section-testimonials" id="endorsements">
+      <div class="section-container">
+        
+        <div class="testimonial-box">
+          <div class="testimonial-header">
+            <span class="quote-symbol">“</span>
+            <div class="carousel-nav-controls">
+              <button class="carousel-btn prev-btn" id="testimonialPrevBtn" aria-label="Previous endorsement">←</button>
+              <span class="carousel-counter" id="testimonialCounter">01 / 03</span>
+              <button class="carousel-btn next-btn" id="testimonialNextBtn" aria-label="Next endorsement">→</button>
+            </div>
+          </div>
+
+          <div class="testimonial-slider" id="testimonialSlider">
+            
+            <div class="testimonial-slide active">
+              <p class="testimonial-text">
+                “Working with Atelier Vanguard felt less like hiring an agency and more like welcoming a SWAT team of design philosophers and computational virtuosos. The spatial cockpit they engineered didn’t just meet the brief—it reset our company’s internal product standards.”
+              </p>
+              <div class="testimonial-client-meta">
+                <span class="client-avatar">MN</span>
+                <div class="client-details">
+                  <h4 class="client-name">Marcus Nyström</h4>
+                  <p class="client-role">Chief Design Officer, Polestar Mobility</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-slide">
+              <p class="testimonial-text">
+                “Their obsession with micro-interactions and soundscapes is unmatched. They turned our flagship product launch into an interactive cultural event that saw 4.2 million visitors with zero degradation in frame rates.”
+              </p>
+              <div class="testimonial-client-meta">
+                <span class="client-avatar">AL</span>
+                <div class="client-details">
+                  <h4 class="client-name">Astrid Lindqvist</h4>
+                  <p class="client-role">Head of Hardware Experience, Teenage Engineering Collaboration</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-slide">
+              <p class="testimonial-text">
+                “Rarely do you find an agency capable of speaking high-fashion editorial poetry in one breath and writing custom GLSL shaders in the next. Vanguard is in a league completely of their own.”
+              </p>
+              <div class="testimonial-client-meta">
+                <span class="client-avatar">CK</span>
+                <div class="client-details">
+                  <h4 class="client-name">Camille Kester</h4>
+                  <p class="client-role">VP of Brand Innovation, LVMH Maison Digital</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CASE STUDY MODAL DIALOG -->
+  <div class="case-study-modal" id="caseStudyModal" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-dialog-content">
+      
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Case Study">
+        <span>✕ ESC</span>
+      </button>
+
+      <div class="modal-scroll-body">
+        
+        <div class="modal-hero-cover">
+          <img src="assets/images/case-spatial-audio.jpg" alt="Case Study Cover" class="modal-cover-img" id="modalCoverImg">
+          <div class="modal-cover-gradient"></div>
+          <div class="modal-header-meta">
+            <span class="modal-client" id="modalClient">AURALIS × TEENAGE ENG.</span>
+            <h2 class="modal-title" id="modalProjectTitle">Auralis Alpha: Tactile Acoustic Hardware</h2>
+          </div>
+        </div>
+
+        <div class="modal-body-container">
+          
+          <div class="modal-stat-ribbon">
+            <div class="modal-stat">
+              <span class="stat-caption">CHALLENGE</span>
+              <strong id="modalChallenge">Bridge raw acoustic vacuum tubes with digital touch controls.</strong>
+            </div>
+            <div class="modal-stat">
+              <span class="stat-caption">TIMELINE</span>
+              <strong id="modalTimeline">14 Weeks Sprint</strong>
+            </div>
+            <div class="modal-stat">
+              <span class="stat-caption">MEASURED LIFT</span>
+              <strong id="modalLift" class="highlight-stat">+240% Pre-Order Velocity</strong>
+            </div>
+          </div>
+
+          <div class="modal-narrative-grid">
+            <div class="modal-narrative-main">
+              <h3>The Conceptual Brief</h3>
+              <p id="modalBriefText">
+                Auralis challenged Vanguard to create a high-fidelity audio system that defied modern black-plastic conventions. We opted for architectural frosted glass, dark titanium knobs with magnetically variable detents, and synthetic acoustic feedback generated directly by physical user manipulation.
+              </p>
+
+              <h3>Technical Execution</h3>
+              <p id="modalTechText">
+                We developed a real-time WebGL configurator paired with embedded micro-firmware UI. Custom GLSL shaders replicated internal light refraction across 16 layers of frosted silicate glass.
+              </p>
+            </div>
+
+            <div class="modal-narrative-sidebar">
+              <h4>Deliverables</h4>
+              <ul class="modal-deliverables-list" id="modalDeliverables">
+                <li>✦ Custom Industrial Form Factor</li>
+                <li>✦ Embedded Display Micro-Firmware</li>
+                <li>✦ WebGL Interactive Launch Engine</li>
+                <li>✦ Tactile Packaging & Typography</li>
+              </ul>
+
+              <a href="#estimator" class="btn btn-primary modal-action-btn" id="modalCommissionBtn">
+                <span>Commission Similar Scope</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-container">
+      
+      <!-- Big Typographic Marquee -->
+      <div class="footer-marquee-row">
+        <h2 class="footer-giant-title">
+          <span>HAVE A VISION?</span>
+          <span class="title-arrow">✦</span>
+          <span class="title-outline">LET’S BUILD IT.</span>
+        </h2>
+      </div>
+
+      <div class="footer-grid">
+        
+        <!-- Left: Brand Statement -->
+        <div class="footer-col-brand">
+          <div class="brand-logo footer-logo">
+            <span class="brand-symbol">✦</span>
+            <span class="brand-name">ATELIER<span class="brand-accent">VANGUARD</span></span>
+          </div>
+          <p class="footer-bio">
+            An independent creative engineering studio operating globally. Engineering culture-defining digital experiences, spatial architectures, and brand systems.
+          </p>
+          <div class="footer-direct-mail">
+            <span class="mail-label">Direct Commission Inquiries:</span>
+            <a href="mailto:commissions@ateliervanguard.design" class="mail-link">commissions@ateliervanguard.design</a>
+          </div>
+        </div>
+
+        <!-- Middle: Navigation columns -->
+        <div class="footer-col-nav">
+          <h4 class="footer-nav-heading">Index</h4>
+          <ul class="footer-links">
+            <li><a href="#works">Selected Works</a></li>
+            <li><a href="#capabilities">Disciplines</a></li>
+            <li><a href="#manifesto">Manifesto</a></li>
+            <li><a href="#estimator">Scope Lab</a></li>
+            <li><a href="#honors">Accolades</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col-nav">
+          <h4 class="footer-nav-heading">Presence</h4>
+          <ul class="footer-links">
+            <li><a href="https://twitter.com" target="_blank" rel="noopener">Twitter / X ↗</a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram ↗</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="https://github.com" target="_blank" rel="noopener">GitHub Systems ↗</a></li>
+            <li><a href="https://are.na" target="_blank" rel="noopener">Are.na Channel ↗</a></li>
+          </ul>
+        </div>
+
+        <!-- Right: Journal / Dispatch Newsletter -->
+        <div class="footer-col-newsletter">
+          <h4 class="footer-nav-heading">The Vanguard Monograph</h4>
+          <p class="newsletter-sub">A quarterly dispatch examining spatial computing, typographic theory, and the economics of digital craft.</p>
+          
+          <form class="newsletter-form" id="newsletterForm">
+            <div class="newsletter-input-wrap">
+              <input type="email" id="newsletterEmail" placeholder="your@domain.com" required aria-label="Email for Monograph Dispatch">
+              <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe to dispatch">→</button>
+            </div>
+            <div class="newsletter-feedback" id="newsletterFeedback" role="alert" aria-live="polite"></div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p class="copyright">© 2026 ATELIER VANGUARD DESIGN SYSTEMS INC. ALL RIGHTS RESERVED.</p>
+        <div class="bottom-links">
+          <span>PRIVACY MEMORANDUM</span>
+          <span>TERMS OF ENGAGEMENT</span>
+          <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+            <span>BACK TO TOP</span>
+            <span class="top-arrow">↑</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
